@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<thymeleaf th:replace="fragments/head :: head" />
+</head>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<form th:action="@{/search}" method="post" name="sign up for beta form">
+		<div class="header">
+			<p>error</p>
+		</div>
+		<div class="description">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+		<div class="input">
+			<input type="text" class="button" id="keyword" name="keyword" placeholder="keyword" />
+			<input type="submit" class="button" id="submit" value="SEARCH" />
+		</div>
+	</form>
+</body>
+</html>

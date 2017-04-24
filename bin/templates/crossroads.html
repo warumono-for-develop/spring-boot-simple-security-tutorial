@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<thymeleaf th:replace="fragments/head :: head" />
+</head>
+<body>
+	<header th:replace="fragments/header :: header"></header>
+	<form method="post" name="sign up for beta form">
+		<div class="header">
+			<p>security tutorial</p>
+		</div>
+		<div class="description">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<h3 th:inline="text">You are [[${#httpServletRequest.remoteUser}]]</h3>
+		</div>
+		<p>If you're a staff or an admin, you can move to <a th:href="@{/staff}" style="color: #E86C8D;">staff</a> page.</p>
+		<p>If you're an admin, you can move to <a th:href="@{/admin}" style="color: #E86C8D;">admin</a> page.</p>
+	</form>
+</body>
+</html>

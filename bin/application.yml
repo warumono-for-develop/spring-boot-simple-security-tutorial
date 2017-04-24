@@ -1,0 +1,35 @@
+server:
+  context-path: /
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+spring:
+#  devtools:
+#    restart:
+#      enabled: false
+  thymeleaf:
+    cache: false
+    check-template-location: false
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:securitydb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+#      ddl-auto: update
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+#    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+#  file: /Users/your/directory/path/log.log
+  level:
+    org.springframework.web: WARN
+    com.warumono: DEBUG
