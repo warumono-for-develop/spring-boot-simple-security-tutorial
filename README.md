@@ -7,7 +7,6 @@ Preview
 <img src="https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/static/app/previews/spring-security-simple-security-tutorial-crossroads.png" width="900px;">
 <img src="https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/static/app/previews/spring-security-simple-security-tutorial-registration.png" width="900px;">
 <img src="https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/static/app/previews/spring-security-simple-security-tutorial-login.png" width="900px;">
-<img src="https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/static/app/previews/spring-security-simple-security-tutorial-admin.png" width="900px;">
 <img src="https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/static/app/previews/spring-security-simple-security-tutorial-denied.png" width="900px;">
 </div>
 
