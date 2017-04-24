@@ -44,12 +44,16 @@ public class AuthenticatedUserDetailsService implements UserDetailsService
 
 	public AuthenticatedUser persistUser(String name, String username, String password)
 	{
-		AuthenticatedUser user = AuthenticatedUser.staff();
+		AuthenticatedUser user = AuthenticatedUser.user();
 		user.setName(username);
 		user.setUsername(username);
 		user.setPassword(passwordEncoder.encode(password));
 		
-		return userRepository.save(user);
+		user = userRepository.save(user);
+		
+		log.debug("{}", user);
+		
+		return user;
 	}
 
 }

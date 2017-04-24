@@ -67,13 +67,15 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter
 			.authorizeRequests()
 				.antMatchers("/app/**/*.css", "/app/**/*.js").permitAll()
 				.antMatchers("/regist", "/login").anonymous()
-				.antMatchers("/", "/index", "/crossroads").permitAll()
+				.antMatchers("/", "/index", "/crossroads", "/registration").permitAll()
 				.antMatchers("/failure", "/denied", "invalid", "/success").permitAll()
 				.antMatchers("/h2-console/**").permitAll()
 				.antMatchers("/admin/**").hasAuthority("ROLE_ADMIN")
 				.antMatchers("/staff/**").hasAnyAuthority("ROLE_ADMIN", "ROLE_STAFF")
+				.antMatchers("/user/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN", "ROLE_STAFF")
 //				.antMatchers("/admin/**").hasRole("ADMIN")
 //				.antMatchers("/staff/**").hasAnyRole("ADMIN", "STAFF")
+//				.antMatchers("/user/**").hasAnyRole("USER", "ADMIN", "STAFF")
 				.anyRequest().authenticated();
 	}
 	

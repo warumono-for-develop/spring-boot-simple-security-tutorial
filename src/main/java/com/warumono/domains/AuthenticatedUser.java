@@ -59,8 +59,8 @@ public class AuthenticatedUser
 		role = user.getRole();
 	}
 	
-	public static final AuthenticatedUser staff()
+	public static final AuthenticatedUser user()
 	{
-		return new AuthenticatedUser(null, null, null, null, Role.ROLE_STAFF);
+		return new AuthenticatedUser(null, null, null, null, Role.ROLE_USER);
 	}
 }

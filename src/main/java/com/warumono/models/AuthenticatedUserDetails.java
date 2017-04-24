@@ -28,13 +28,17 @@ public class AuthenticatedUserDetails extends AuthenticatedUser implements UserD
 
 		String role = getRole().name();
 		
-		if(StringUtils.equals(Role.ROLE_STAFF.name(), role))
+		if(StringUtils.equals(Role.ROLE_USER.name(), role))
 		{
 			authrities = AuthorityUtils.createAuthorityList(role);
 		}
+		else if(StringUtils.equals(Role.ROLE_STAFF.name(), role))
+		{
+			authrities = AuthorityUtils.createAuthorityList(Role.ROLE_USER.name(), role);
+		}
 		else if(StringUtils.equals(Role.ROLE_ADMIN.name(), role))
 		{
-			authrities = AuthorityUtils.createAuthorityList(Role.ROLE_STAFF.name(), role);
+			authrities = AuthorityUtils.createAuthorityList(Role.ROLE_USER.name(), Role.ROLE_STAFF.name(), role);
 		}
 		
 		return authrities;
