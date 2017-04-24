@@ -59,6 +59,9 @@ username: staff@me.com
 password: staff
 ```
 
+#### or
+You can use it that create a new account.
+
 API
 ------
 #### Configuration
