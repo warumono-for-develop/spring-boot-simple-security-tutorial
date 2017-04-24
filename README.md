@@ -34,7 +34,7 @@ How to Run
 $ ./gradle bootRun
 ```
 
-Test accoutns
+Test accounts
 ------
 + Reference file [data.sql](https://github.com/warumono-for-develop/spring-boot-simple-security-tutorial/blob/master/src/main/resources/data.sql)
 
