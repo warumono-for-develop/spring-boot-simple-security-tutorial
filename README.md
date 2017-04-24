@@ -8,7 +8,6 @@ Requirements
 Running in
 + [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.8 or newer
 + [Spring Boot](https://github.com/spring-projects/spring-boot) 1.5.2.RELEASE or newer
-+ [Spring Security](https://spring.io/guides/gs/securing-web) 1.5.2.RELEASE or newer
 + [Gradle](https://github.com/gradle/gradle) 3.4.1 or newer
 
 Optional
@@ -17,8 +16,10 @@ Optional
 
 Dependencies
 ------
++ [org.springframework.boot:spring-boot-starter-security](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security)
++ [org.springframework.boot:spring-boot-starter-data-jpa](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa)
++ [org.springframework.boot:spring-boot-starter-thymeleaf](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf)
 + [org.springframework.boot:spring-boot-starter-web](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web)
-+ [javax.ws.rs:javax.ws.rs-api:2.0.1](https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api)
 
 Latest Update
 ------
